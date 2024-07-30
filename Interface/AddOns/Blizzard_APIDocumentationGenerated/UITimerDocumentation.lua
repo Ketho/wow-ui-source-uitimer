@@ -29,7 +29,7 @@ local UITimer =
 
 			Returns =
 			{
-				{ Name = "cbObject", Type = "TickerCallback", Nilable = false },
+				{ Name = "cbObject", Type = "FunctionContainer", Nilable = false },
 			},
 		},
 		{
@@ -44,7 +44,7 @@ local UITimer =
 
 			Returns =
 			{
-				{ Name = "cbObject", Type = "TickerCallback", Nilable = false },
+				{ Name = "cbObject", Type = "FunctionContainer", Nilable = false },
 			},
 		},
 	},
@@ -61,12 +61,17 @@ local UITimer =
 
 			Arguments =
 			{
-				{ Name = "cb", Type = "TimerCallback", Nilable = false },
+				{ Name = "cb", Type = "FunctionContainer", Nilable = false },
 			},
 		},
 		{
 			Name = "TimerCallback",
 			Type = "CallbackType",
+
+			Arguments =
+			{
+				{ Name = "cb", Type = "FunctionContainer", Nilable = false },
+			},
 		},
 	},
 };
